@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="75538" started-at="2020-01-10T17:20:25Z" finished-at="2020-01-10T17:21:41Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="75538" started-at="2020-01-10T17:20:25Z" finished-at="2020-01-10T17:21:41Z">
+      <class name="com.appium.android.Tests.SendMessageTest">
+        <test-method status="PASS" signature="openMessenger()[pri:0, instance:com.appium.android.Tests.SendMessageTest@523884b2]" name="openMessenger" is-config="true" duration-ms="20819" started-at="2020-01-10T22:50:25Z" finished-at="2020-01-10T22:50:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openMessenger -->
+        <test-method status="PASS" signature="sendMessageTest()[pri:1, instance:com.appium.android.Tests.SendMessageTest@523884b2]" name="sendMessageTest" duration-ms="47451" started-at="2020-01-10T22:50:46Z" finished-at="2020-01-10T22:51:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendMessageTest -->
+        <test-method status="PASS" signature="closeMessenger()[pri:0, instance:com.appium.android.Tests.SendMessageTest@523884b2]" name="closeMessenger" is-config="true" duration-ms="7234" started-at="2020-01-10T22:51:34Z" finished-at="2020-01-10T22:51:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeMessenger -->
+      </class> <!-- com.appium.android.Tests.SendMessageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
