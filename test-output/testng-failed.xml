@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Appium Suite]">
-  <test name="Appium Test Set(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
       <class name="com.appium.android.Tests.SendMessageTest">
         <methods>
@@ -11,5 +11,5 @@
         </methods>
       </class> <!-- com.appium.android.Tests.SendMessageTest -->
     </classes>
-  </test> <!-- Appium Test Set(failed) -->
-</suite> <!-- Failed suite [Appium Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

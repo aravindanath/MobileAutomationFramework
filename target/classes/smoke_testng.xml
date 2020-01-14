@@ -5,7 +5,10 @@
 	<test name="Appium Test Set">
 
 		<classes>
+			<class name="com.appium.android.Tests.DialCallNumbersTest"/>
 			<class name="com.appium.android.Tests.SendMessageTest"/>
+			<class name="com.appium.android.Tests.CalculatorTest"/>
+			<class name="com.appium.android.Tests.VerticalScrollingTest"/>
 		</classes>
 
 	</test>

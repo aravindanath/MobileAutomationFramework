@@ -1,38 +1,18 @@
 package com.appium.android.Tests;
 
 import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.remote.MobileCapabilityType;
+import com.appium.BaseClass.TestBase;
 
-public class DialCallNumbersTest 
-{
-	URL url;
-	AndroidDriver<WebElement> driver;
-	
+public class DialCallNumbersTest extends TestBase
+{	
 	@BeforeMethod
 	public void openDialer() throws MalformedURLException
 	{
-		DesiredCapabilities capabilities = new DesiredCapabilities();
-		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "PavanEmulator");
-		capabilities.setCapability(MobileCapabilityType.UDID, "emulator-5554");
-		capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-		capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "9");
-		
-		capabilities.setCapability("appPackage", "com.google.android.apps.nexuslauncher");
-		capabilities.setCapability("appActivity", "com.google.android.apps.nexuslauncher.NexusLauncherActivity");
-		
-		url = new URL("http://127.0.0.1:4723/wd/hub");
-		driver = new AndroidDriver<WebElement>(url, capabilities);
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		TestBase.launchAndroidDriver(property.getProperty("HomePageAppPackage"),property.getProperty("HomePageAppActivity"));
 	}
 	
 	@Test(priority=1)
