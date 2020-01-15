@@ -1,79 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Appium Suite" duration-ms="290902" started-at="2020-01-14T19:08:09Z" finished-at="2020-01-14T19:13:00Z">
+  <suite name="Default suite" duration-ms="30071" started-at="2020-01-15T17:42:02Z" finished-at="2020-01-15T17:42:32Z">
     <groups>
     </groups>
-    <test name="Appium Test Set" duration-ms="290902" started-at="2020-01-14T19:08:09Z" finished-at="2020-01-14T19:13:00Z">
-      <class name="com.appium.android.Tests.DialCallNumbersTest">
-        <test-method status="PASS" signature="openDialer()[pri:0, instance:com.appium.android.Tests.DialCallNumbersTest@71318ec4]" name="openDialer" is-config="true" duration-ms="27653" started-at="2020-01-15T00:38:09Z" finished-at="2020-01-15T00:38:36Z">
+    <test name="Default test" duration-ms="30071" started-at="2020-01-15T17:42:02Z" finished-at="2020-01-15T17:42:32Z">
+      <class name="com.appium.android.Tests.AndroidUIAutomatorLocatorTest">
+        <test-method status="PASS" signature="openApiDemos()[pri:0, instance:com.appium.android.Tests.AndroidUIAutomatorLocatorTest@31dc339b]" name="openApiDemos" is-config="true" duration-ms="13413" started-at="2020-01-15T23:12:02Z" finished-at="2020-01-15T23:12:15Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openDialer -->
-        <test-method status="PASS" signature="dialCallNumbersTest()[pri:1, instance:com.appium.android.Tests.DialCallNumbersTest@71318ec4]" name="dialCallNumbersTest" duration-ms="49696" started-at="2020-01-15T00:38:36Z" finished-at="2020-01-15T00:39:26Z">
+        </test-method> <!-- openApiDemos -->
+        <test-method status="PASS" signature="androidUIAutomatorLocatorTest()[pri:1, instance:com.appium.android.Tests.AndroidUIAutomatorLocatorTest@31dc339b]" name="androidUIAutomatorLocatorTest" duration-ms="9289" started-at="2020-01-15T23:12:15Z" finished-at="2020-01-15T23:12:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dialCallNumbersTest -->
-        <test-method status="PASS" signature="closeDialer()[pri:0, instance:com.appium.android.Tests.DialCallNumbersTest@71318ec4]" name="closeDialer" is-config="true" duration-ms="5492" started-at="2020-01-15T00:39:26Z" finished-at="2020-01-15T00:39:32Z">
+        </test-method> <!-- androidUIAutomatorLocatorTest -->
+        <test-method status="PASS" signature="closeApiDemos()[pri:0, instance:com.appium.android.Tests.AndroidUIAutomatorLocatorTest@31dc339b]" name="closeApiDemos" is-config="true" duration-ms="7290" started-at="2020-01-15T23:12:25Z" finished-at="2020-01-15T23:12:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeDialer -->
-      </class> <!-- com.appium.android.Tests.DialCallNumbersTest -->
-      <class name="com.appium.android.Tests.VerticalScrollingTest">
-        <test-method status="PASS" signature="openAPIDemos()[pri:0, instance:com.appium.android.Tests.VerticalScrollingTest@3327bd23]" name="openAPIDemos" is-config="true" duration-ms="20711" started-at="2020-01-15T00:41:42Z" finished-at="2020-01-15T00:42:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openAPIDemos -->
-        <test-method status="PASS" signature="verticalScrollingTest()[pri:1, instance:com.appium.android.Tests.VerticalScrollingTest@3327bd23]" name="verticalScrollingTest" duration-ms="49643" started-at="2020-01-15T00:42:03Z" finished-at="2020-01-15T00:42:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verticalScrollingTest -->
-        <test-method status="PASS" signature="closeAPIDemos()[pri:0, instance:com.appium.android.Tests.VerticalScrollingTest@3327bd23]" name="closeAPIDemos" is-config="true" duration-ms="7015" started-at="2020-01-15T00:42:53Z" finished-at="2020-01-15T00:43:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeAPIDemos -->
-      </class> <!-- com.appium.android.Tests.VerticalScrollingTest -->
-      <class name="com.appium.android.Tests.CalculatorTest">
-        <test-method status="PASS" signature="openCalculator()[pri:0, instance:com.appium.android.Tests.CalculatorTest@a67c67e]" name="openCalculator" is-config="true" duration-ms="20808" started-at="2020-01-15T00:40:44Z" finished-at="2020-01-15T00:41:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openCalculator -->
-        <test-method status="PASS" signature="additionOfTwoNumbersTest()[pri:1, instance:com.appium.android.Tests.CalculatorTest@a67c67e]" name="additionOfTwoNumbersTest" duration-ms="5304" started-at="2020-01-15T00:41:05Z" finished-at="2020-01-15T00:41:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- additionOfTwoNumbersTest -->
-        <test-method status="PASS" signature="closeCalculator()[pri:0, instance:com.appium.android.Tests.CalculatorTest@a67c67e]" name="closeCalculator" is-config="true" duration-ms="4696" started-at="2020-01-15T00:41:10Z" finished-at="2020-01-15T00:41:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeCalculator -->
-        <test-method status="PASS" signature="openCalculator()[pri:0, instance:com.appium.android.Tests.CalculatorTest@a67c67e]" name="openCalculator" is-config="true" duration-ms="18088" started-at="2020-01-15T00:41:15Z" finished-at="2020-01-15T00:41:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openCalculator -->
-        <test-method status="PASS" signature="multiplicationOfTwoNumbersTest()[pri:2, instance:com.appium.android.Tests.CalculatorTest@a67c67e]" name="multiplicationOfTwoNumbersTest" duration-ms="4483" started-at="2020-01-15T00:41:33Z" finished-at="2020-01-15T00:41:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- multiplicationOfTwoNumbersTest -->
-        <test-method status="PASS" signature="closeCalculator()[pri:0, instance:com.appium.android.Tests.CalculatorTest@a67c67e]" name="closeCalculator" is-config="true" duration-ms="4646" started-at="2020-01-15T00:41:38Z" finished-at="2020-01-15T00:41:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeCalculator -->
-      </class> <!-- com.appium.android.Tests.CalculatorTest -->
-      <class name="com.appium.android.Tests.SendMessageTest">
-        <test-method status="PASS" signature="openMessenger()[pri:0, instance:com.appium.android.Tests.SendMessageTest@21213b92]" name="openMessenger" is-config="true" duration-ms="19499" started-at="2020-01-15T00:39:32Z" finished-at="2020-01-15T00:39:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openMessenger -->
-        <test-method status="PASS" signature="sendMessageTest()[pri:1, instance:com.appium.android.Tests.SendMessageTest@21213b92]" name="sendMessageTest" duration-ms="50948" started-at="2020-01-15T00:39:51Z" finished-at="2020-01-15T00:40:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sendMessageTest -->
-        <test-method status="PASS" signature="closeMessenger()[pri:0, instance:com.appium.android.Tests.SendMessageTest@21213b92]" name="closeMessenger" is-config="true" duration-ms="2174" started-at="2020-01-15T00:40:42Z" finished-at="2020-01-15T00:40:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeMessenger -->
-      </class> <!-- com.appium.android.Tests.SendMessageTest -->
-    </test> <!-- Appium Test Set -->
-  </suite> <!-- Appium Suite -->
+        </test-method> <!-- closeApiDemos -->
+      </class> <!-- com.appium.android.Tests.AndroidUIAutomatorLocatorTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
