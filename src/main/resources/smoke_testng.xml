@@ -10,6 +10,8 @@
 			<class name="com.appium.android.Tests.CalculatorTest"/>
 			<class name="com.appium.android.Tests.LocatorsXpathTest"/>
 			<class name="com.appium.android.Tests.VerticalScrollingTest"/>
+			<class name="com.appium.android.Tests.TappingTest"/>
+			<class name="com.appium.android.Tests.LongPressTest"/>
 		</classes>
 
 	</test>

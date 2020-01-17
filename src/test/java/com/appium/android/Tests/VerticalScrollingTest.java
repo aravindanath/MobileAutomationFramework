@@ -19,7 +19,7 @@ public class VerticalScrollingTest extends TestBase
 	@Test(priority=1)
 	public void verticalScrollingTest() throws InterruptedException
 	{
-		driver.findElementByXPath("//*[contains(@text, 'Views')]").click();
+		driver.findElementByXPath("//android.widget.TextView[@text = 'Views']").click();
 		
 		driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"WebView\").instance(0))").click();
 		Thread.sleep(20000);

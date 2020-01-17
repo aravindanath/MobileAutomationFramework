@@ -18,7 +18,7 @@ public class DialCallNumbersTest extends TestBase
 	@Test(priority=1)
 	public void dialCallNumbersTest() throws InterruptedException
 	{
-		driver.findElementByXPath("//*[contains(@text, 'Phone')]").click();
+		driver.findElementByXPath("//android.widget.TextView[@text = 'Phone']").click();
 		Thread.sleep(5000);
 		
 		driver.findElementById("com.google.android.dialer:id/fab").click();

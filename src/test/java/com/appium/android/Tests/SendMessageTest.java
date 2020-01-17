@@ -18,7 +18,7 @@ public class SendMessageTest extends TestBase
 	@Test(priority=1)
 	public void sendMessageTest() throws InterruptedException
 	{
-		driver.findElementByXPath("//*[contains(@text, 'Messages')]").click();
+		driver.findElementByXPath("//android.widget.TextView[@text = 'Messages']").click();
 		Thread.sleep(3000);
 			
 		driver.findElementById("com.google.android.apps.messaging:id/start_new_conversation_button").click();

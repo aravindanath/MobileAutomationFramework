@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="30071" started-at="2020-01-15T17:42:02Z" finished-at="2020-01-15T17:42:32Z">
+  <suite name="Default suite" duration-ms="40556" started-at="2020-01-17T17:10:06Z" finished-at="2020-01-17T17:10:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="30071" started-at="2020-01-15T17:42:02Z" finished-at="2020-01-15T17:42:32Z">
-      <class name="com.appium.android.Tests.AndroidUIAutomatorLocatorTest">
-        <test-method status="PASS" signature="openApiDemos()[pri:0, instance:com.appium.android.Tests.AndroidUIAutomatorLocatorTest@31dc339b]" name="openApiDemos" is-config="true" duration-ms="13413" started-at="2020-01-15T23:12:02Z" finished-at="2020-01-15T23:12:15Z">
+    <test name="Default test" duration-ms="40556" started-at="2020-01-17T17:10:06Z" finished-at="2020-01-17T17:10:47Z">
+      <class name="com.appium.android.Tests.SwipeTest">
+        <test-method status="PASS" signature="openApiDemos()[pri:0, instance:com.appium.android.Tests.SwipeTest@3327bd23]" name="openApiDemos" is-config="true" duration-ms="16708" started-at="2020-01-17T22:40:06Z" finished-at="2020-01-17T22:40:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApiDemos -->
-        <test-method status="PASS" signature="androidUIAutomatorLocatorTest()[pri:1, instance:com.appium.android.Tests.AndroidUIAutomatorLocatorTest@31dc339b]" name="androidUIAutomatorLocatorTest" duration-ms="9289" started-at="2020-01-15T23:12:15Z" finished-at="2020-01-15T23:12:25Z">
+        <test-method status="PASS" signature="swipeTest()[pri:1, instance:com.appium.android.Tests.SwipeTest@3327bd23]" name="swipeTest" duration-ms="20060" started-at="2020-01-17T22:40:23Z" finished-at="2020-01-17T22:40:43Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- androidUIAutomatorLocatorTest -->
-        <test-method status="PASS" signature="closeApiDemos()[pri:0, instance:com.appium.android.Tests.AndroidUIAutomatorLocatorTest@31dc339b]" name="closeApiDemos" is-config="true" duration-ms="7290" started-at="2020-01-15T23:12:25Z" finished-at="2020-01-15T23:12:32Z">
+        </test-method> <!-- swipeTest -->
+        <test-method status="PASS" signature="closeApiDemos()[pri:0, instance:com.appium.android.Tests.SwipeTest@3327bd23]" name="closeApiDemos" is-config="true" duration-ms="3738" started-at="2020-01-17T22:40:43Z" finished-at="2020-01-17T22:40:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApiDemos -->
-      </class> <!-- com.appium.android.Tests.AndroidUIAutomatorLocatorTest -->
+      </class> <!-- com.appium.android.Tests.SwipeTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
