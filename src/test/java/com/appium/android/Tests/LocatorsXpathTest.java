@@ -7,32 +7,27 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.appium.BaseClass.TestBase;
+import com.appium.Pages.PreferencesPage;
 
 public class LocatorsXpathTest extends TestBase
 {
+	PreferencesPage preferencesPage;
+	
 	@BeforeMethod
 	public void openApiDemos() throws MalformedURLException
 	{
 		TestBase.launchAndroidDriver(property.getProperty("ApkDemoAppPackage"),property.getProperty("ApkDemoAppActivity"));
+	
+		preferencesPage = new PreferencesPage(driver);
 	}
 	
-	//Xpath Syntax:
 	//tagName[@attribute = 'value']
 	//For MobileElements, ClassName is equal to TagName.
 	
 	@Test(priority=1)
 	public void locatorsXpathTest() throws InterruptedException
-	{
-		driver.findElementByXPath("//android.widget.TextView[@text = 'Preference']").click();
-		driver.findElementByXPath("//android.widget.TextView[@text = '3. Preference dependencies']").click();
-	
-		driver.findElementById("android:id/checkbox").click();
-		
-		driver.findElementByXPath("(//android.widget.RelativeLayout)[2]").click();
-		
-		driver.findElementByClassName("android.widget.EditText").sendKeys("Hello");
-		
-		driver.findElementsByClassName("android.widget.Button").get(1).click();
+	{		
+		preferencesPage.performLocatorsStrategy("Hello");
 		Thread.sleep(3000);
 	}
 	

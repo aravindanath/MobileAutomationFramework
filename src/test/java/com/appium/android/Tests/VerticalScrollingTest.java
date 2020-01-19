@@ -7,21 +7,27 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.appium.BaseClass.TestBase;
+import com.appium.Pages.ViewsPage;
+import com.appium.Utilities.TestUtility;
 
 public class VerticalScrollingTest extends TestBase
 {
+	ViewsPage viewsPage;
+	
 	@BeforeMethod
 	public void openAPIDemos() throws MalformedURLException
 	{
 		TestBase.launchAndroidDriver(property.getProperty("ApkDemoAppPackage"),property.getProperty("ApkDemoAppActivity"));
+	
+		viewsPage = new ViewsPage(driver);
 	}
 	
 	@Test(priority=1)
 	public void verticalScrollingTest() throws InterruptedException
 	{
-		driver.findElementByXPath("//android.widget.TextView[@text = 'Views']").click();
+		viewsPage.clickOnViewsButton();
 		
-		driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"WebView\").instance(0))").click();
+		TestUtility.verticalScroll("WebView");		
 		Thread.sleep(20000);
 	}
 	
