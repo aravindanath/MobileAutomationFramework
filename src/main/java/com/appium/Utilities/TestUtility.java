@@ -10,6 +10,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.appium.BaseClass.TestBase;
 
 import io.appium.java_client.TouchAction;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
 import io.appium.java_client.touch.LongPressOptions;
 import io.appium.java_client.touch.offset.ElementOption;
 
@@ -18,7 +21,10 @@ import static io.appium.java_client.touch.offset.ElementOption.element;
 import static java.time.Duration.ofSeconds;
 
 public class TestUtility extends TestBase
-{		
+{	
+	public static TouchAction touchAction;
+	public static LongPressOptions longPressOptions;
+	
 	public final static int timeOut = 30;
 	public final static String additionOfTwoNumbers = "10";
 	public final static String multiplicationOfTwoNumbers = "40";
@@ -34,11 +40,11 @@ public class TestUtility extends TestBase
 	{
 		 try 
 		 {
-			 TouchAction touch = new TouchAction(driver);
-			 LongPressOptions longPressOptions = new LongPressOptions();
+			 touchAction = new TouchAction(driver);
+			 longPressOptions = new LongPressOptions();
 			 
 			 longPressOptions.withElement(ElementOption.element(element)).withDuration(ofSeconds(2));
-			 touch.longPress(longPressOptions).release().perform();
+			 touchAction.longPress(longPressOptions).release().perform();
 		 } 
 		 catch (NoSuchElementException excetion) 
 		 {
@@ -51,7 +57,7 @@ public class TestUtility extends TestBase
 	{
 		try 
 		{
-			TouchAction touchAction = new TouchAction(driver);
+			touchAction = new TouchAction(driver);
 			touchAction.tap(tapOptions().withElement(element(element))).perform();
 		} 
 		catch (NoSuchElementException exception) 
@@ -90,5 +96,45 @@ public class TestUtility extends TestBase
             System.out.println("Element is Not Visible ::: " +targetElement);
             throw exception;
         }
+    }
+	
+	//Function to Drag and Drop from Source Element to Destination Element.
+	public static void dragAndDrop(WebElement sourceElement, WebElement destinationElement)
+	{
+		try 
+		{
+			touchAction = new TouchAction(driver);
+			longPressOptions = new LongPressOptions();
+			
+			longPressOptions.withElement(ElementOption.element(sourceElement));
+			touchAction.longPress(longPressOptions).moveTo(element(destinationElement)).release().perform();
+		} 
+		catch (ArrayIndexOutOfBoundsException exception) 
+		{
+			exception.printStackTrace();
+		}
+	}
+	
+	//Function to Go Back by Android Native Click.
+    public static void andriodBackClick() 
+    {
+        ((AndroidDriver) driver).pressKey(new KeyEvent().withKey(AndroidKey.BACK));
+    }
+    
+    //Function to Swipe from Source Element to Destination Element.
+    public static void swipe(WebElement sourceElement, WebElement destinationElement)
+    {
+		try 
+		{
+			touchAction = new TouchAction(driver);
+			longPressOptions = new LongPressOptions();
+			
+			longPressOptions.withElement(ElementOption.element(sourceElement)).withDuration(ofSeconds(2));
+			touchAction.longPress(longPressOptions).moveTo(element(destinationElement)).release().perform();
+		} 
+		catch (NoSuchElementException exception) 
+		{
+			exception.printStackTrace();
+		}
     }
 }

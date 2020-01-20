@@ -8,8 +8,9 @@ import org.testng.annotations.Test;
 
 import com.appium.BaseClass.TestBase;
 import com.appium.Pages.ViewsPage;
+import com.appium.Utilities.TestUtility;
 
-public class SwipeTest extends TestBase
+public class DragAndDropTest extends TestBase
 {
 	ViewsPage viewsPage;
 	
@@ -22,10 +23,14 @@ public class SwipeTest extends TestBase
 	}
 	
 	@Test(priority=1)
-	public void swipeTest() throws InterruptedException
-	{	
+	public void dragAndDropTest() throws InterruptedException
+	{                  
 		viewsPage.clickOnViewsButton();
-		viewsPage.swipe();
+		viewsPage.dragAndDrop();
+		
+		TestUtility.andriodBackClick();
+		viewsPage.tapOnExpandableList();
+		Thread.sleep(5000);
 	}
 	
 	@AfterMethod

@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="69683" started-at="2020-01-19T15:16:15Z" finished-at="2020-01-19T15:17:25Z">
+  <suite name="Default suite" duration-ms="39920" started-at="2020-01-20T18:17:18Z" finished-at="2020-01-20T18:17:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="69683" started-at="2020-01-19T15:16:15Z" finished-at="2020-01-19T15:17:25Z">
-      <class name="com.appium.android.Tests.VerticalScrollingTest">
-        <test-method status="PASS" signature="openAPIDemos()[pri:0, instance:com.appium.android.Tests.VerticalScrollingTest@2038ae61]" name="openAPIDemos" is-config="true" duration-ms="14533" started-at="2020-01-19T20:46:15Z" finished-at="2020-01-19T20:46:30Z">
+    <test name="Default test" duration-ms="39920" started-at="2020-01-20T18:17:18Z" finished-at="2020-01-20T18:17:58Z">
+      <class name="com.appium.android.Tests.SwipeTest">
+        <test-method status="PASS" signature="openApiDemos()[pri:0, instance:com.appium.android.Tests.SwipeTest@2038ae61]" name="openApiDemos" is-config="true" duration-ms="19049" started-at="2020-01-20T23:47:18Z" finished-at="2020-01-20T23:47:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openAPIDemos -->
-        <test-method status="PASS" signature="verticalScrollingTest()[pri:1, instance:com.appium.android.Tests.VerticalScrollingTest@2038ae61]" name="verticalScrollingTest" duration-ms="50662" started-at="2020-01-19T20:46:30Z" finished-at="2020-01-19T20:47:21Z">
+        </test-method> <!-- openApiDemos -->
+        <test-method status="PASS" signature="swipeTest()[pri:1, instance:com.appium.android.Tests.SwipeTest@2038ae61]" name="swipeTest" duration-ms="16506" started-at="2020-01-20T23:47:37Z" finished-at="2020-01-20T23:47:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verticalScrollingTest -->
-        <test-method status="PASS" signature="closeAPIDemos()[pri:0, instance:com.appium.android.Tests.VerticalScrollingTest@2038ae61]" name="closeAPIDemos" is-config="true" duration-ms="4444" started-at="2020-01-19T20:47:21Z" finished-at="2020-01-19T20:47:25Z">
+        </test-method> <!-- swipeTest -->
+        <test-method status="PASS" signature="closeApiDemos()[pri:0, instance:com.appium.android.Tests.SwipeTest@2038ae61]" name="closeApiDemos" is-config="true" duration-ms="4325" started-at="2020-01-20T23:47:54Z" finished-at="2020-01-20T23:47:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeAPIDemos -->
-      </class> <!-- com.appium.android.Tests.VerticalScrollingTest -->
+        </test-method> <!-- closeApiDemos -->
+      </class> <!-- com.appium.android.Tests.SwipeTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
