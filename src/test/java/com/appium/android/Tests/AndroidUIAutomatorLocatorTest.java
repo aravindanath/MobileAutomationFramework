@@ -18,7 +18,7 @@ public class AndroidUIAutomatorLocatorTest extends TestBase
 		TestBase.launchAndroidDriver(property.getProperty("ApkDemoAppPackage"),property.getProperty("ApkDemoAppActivity"));
 	}
 	
-	//Syntax:
+	//Syntax
 	//("attribute("value")")
 	
 	@Test(priority=1)
