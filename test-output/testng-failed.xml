@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.appium.android.Tests.SwipeTest">
+      <class name="com.appium.android.Tests.SendMessageTest">
         <methods>
-          <include name="openApiDemos"/>
-          <include name="swipeTest"/>
+          <include name="closeMessenger"/>
+          <include name="sendMessageTest"/>
+          <include name="openMessenger"/>
         </methods>
-      </class> <!-- com.appium.android.Tests.SwipeTest -->
+      </class> <!-- com.appium.android.Tests.SendMessageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

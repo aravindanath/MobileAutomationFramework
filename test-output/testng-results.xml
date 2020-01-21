@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="39920" started-at="2020-01-20T18:17:18Z" finished-at="2020-01-20T18:17:58Z">
+  <suite name="Default suite" duration-ms="59267" started-at="2020-01-21T17:02:47Z" finished-at="2020-01-21T17:03:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="39920" started-at="2020-01-20T18:17:18Z" finished-at="2020-01-20T18:17:58Z">
-      <class name="com.appium.android.Tests.SwipeTest">
-        <test-method status="PASS" signature="openApiDemos()[pri:0, instance:com.appium.android.Tests.SwipeTest@2038ae61]" name="openApiDemos" is-config="true" duration-ms="19049" started-at="2020-01-20T23:47:18Z" finished-at="2020-01-20T23:47:37Z">
+    <test name="Default test" duration-ms="59267" started-at="2020-01-21T17:02:47Z" finished-at="2020-01-21T17:03:46Z">
+      <class name="com.appium.android.Tests.CalculatorTest">
+        <test-method status="PASS" signature="openCalculator()[pri:0, instance:com.appium.android.Tests.CalculatorTest@2038ae61]" name="openCalculator" is-config="true" duration-ms="19690" started-at="2020-01-21T22:32:47Z" finished-at="2020-01-21T22:33:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openApiDemos -->
-        <test-method status="PASS" signature="swipeTest()[pri:1, instance:com.appium.android.Tests.SwipeTest@2038ae61]" name="swipeTest" duration-ms="16506" started-at="2020-01-20T23:47:37Z" finished-at="2020-01-20T23:47:54Z">
+        </test-method> <!-- openCalculator -->
+        <test-method status="PASS" signature="additionOfTwoNumbersTest()[pri:1, instance:com.appium.android.Tests.CalculatorTest@2038ae61]" name="additionOfTwoNumbersTest" duration-ms="3998" started-at="2020-01-21T22:33:07Z" finished-at="2020-01-21T22:33:11Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- swipeTest -->
-        <test-method status="PASS" signature="closeApiDemos()[pri:0, instance:com.appium.android.Tests.SwipeTest@2038ae61]" name="closeApiDemos" is-config="true" duration-ms="4325" started-at="2020-01-20T23:47:54Z" finished-at="2020-01-20T23:47:58Z">
+        </test-method> <!-- additionOfTwoNumbersTest -->
+        <test-method status="PASS" signature="closeCalculator()[pri:0, instance:com.appium.android.Tests.CalculatorTest@2038ae61]" name="closeCalculator" is-config="true" duration-ms="5451" started-at="2020-01-21T22:33:11Z" finished-at="2020-01-21T22:33:16Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeApiDemos -->
-      </class> <!-- com.appium.android.Tests.SwipeTest -->
+        </test-method> <!-- closeCalculator -->
+        <test-method status="PASS" signature="openCalculator()[pri:0, instance:com.appium.android.Tests.CalculatorTest@2038ae61]" name="openCalculator" is-config="true" duration-ms="19553" started-at="2020-01-21T22:33:16Z" finished-at="2020-01-21T22:33:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCalculator -->
+        <test-method status="PASS" signature="multiplicationOfTwoNumbersTest()[pri:2, instance:com.appium.android.Tests.CalculatorTest@2038ae61]" name="multiplicationOfTwoNumbersTest" duration-ms="4577" started-at="2020-01-21T22:33:36Z" finished-at="2020-01-21T22:33:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multiplicationOfTwoNumbersTest -->
+        <test-method status="PASS" signature="closeCalculator()[pri:0, instance:com.appium.android.Tests.CalculatorTest@2038ae61]" name="closeCalculator" is-config="true" duration-ms="5955" started-at="2020-01-21T22:33:40Z" finished-at="2020-01-21T22:33:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeCalculator -->
+      </class> <!-- com.appium.android.Tests.CalculatorTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

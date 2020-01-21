@@ -6,12 +6,10 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.appium.BaseClass.TestBase;
-import com.appium.Pages.HomePage;
 import com.appium.Pages.PhoneCallPage;
 
-public class DialCallNumbersTest extends TestBase
+public class PhoneCallTest extends TestBase
 {	
-	HomePage homePage;
 	PhoneCallPage phoneCallPage;
 	
 	@BeforeMethod
@@ -19,14 +17,13 @@ public class DialCallNumbersTest extends TestBase
 	{
 		TestBase.launchAndroidDriver(property.getProperty("HomePageAppPackage"),property.getProperty("HomePageAppActivity"));
 	
-		homePage = new HomePage(driver);
 		phoneCallPage = new PhoneCallPage(driver);
 	}
 	
 	@Test(priority=1)
-	public void dialCallNumbersTest() throws InterruptedException
+	public void phoneCallTest() throws InterruptedException
 	{
-		homePage.clickOnPhoneButton();
+		phoneCallPage.clickOnPhoneButton();
 		phoneCallPage.makeCall();
 	}
 	

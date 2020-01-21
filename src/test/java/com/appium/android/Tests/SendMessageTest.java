@@ -6,31 +6,24 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.appium.BaseClass.TestBase;
+import com.appium.Pages.SendMessagePage;
 
 public class SendMessageTest extends TestBase
 {
+	SendMessagePage sendMessagePage;
+	
 	@BeforeMethod
 	public void openMessenger() throws MalformedURLException
 	{
 		TestBase.launchAndroidDriver(property.getProperty("HomePageAppPackage"),property.getProperty("HomePageAppActivity"));
+	
+		sendMessagePage = new SendMessagePage(driver);
 	}
 	
 	@Test(priority=1)
 	public void sendMessageTest() throws InterruptedException
 	{
-		driver.findElementByXPath("//android.widget.TextView[@text = 'Messages']").click();
-		Thread.sleep(3000);
-			
-		driver.findElementById("com.google.android.apps.messaging:id/start_new_conversation_button").click();
-			
-		driver.findElementById("com.google.android.apps.messaging:id/recipient_text_view").sendKeys("9164546000");	
-		Thread.sleep(3000);
-			
-		driver.findElementById("com.google.android.apps.messaging:id/contact_picker_create_group").click();
-		driver.findElementById("com.google.android.apps.messaging:id/action_confirm_participants").click();
-		driver.findElementById("com.google.android.apps.messaging:id/compose_message_text").sendKeys("Hi, Pavan KrishnanReddy..!!");
-		driver.findElementById("com.google.android.apps.messaging:id/send_message_button_container").click();
-		Thread.sleep(5000); 
+		sendMessagePage.sendMessage();
 	}
 
 	@AfterMethod

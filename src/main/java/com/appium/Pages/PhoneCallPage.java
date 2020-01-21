@@ -9,6 +9,9 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 public class PhoneCallPage 
 {
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text = 'Phone']")
+	public WebElement phoneButton;
+	
 	@AndroidFindBy(id = "com.google.android.dialer:id/fab")
 	public WebElement dialButton;
 	
@@ -39,6 +42,11 @@ public class PhoneCallPage
 	public PhoneCallPage(AppiumDriver driver)
 	{
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
+	}
+	
+	public void clickOnPhoneButton()
+	{
+		phoneButton.click();
 	}
 	
 	public void makeCall() throws InterruptedException
