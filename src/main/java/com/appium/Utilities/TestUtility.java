@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.appium.BaseClass.TestBase;
 
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.nativekey.AndroidKey;
@@ -136,5 +137,11 @@ public class TestUtility extends TestBase
 		{
 			exception.printStackTrace();
 		}
+    }
+    
+    //Function to Close Android Keyboard.
+    public static void closeKeyboard() 
+    {
+        ((AppiumDriver) driver).hideKeyboard();
     }
 }

@@ -5,14 +5,13 @@ import java.util.List;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
-import com.appium.BaseClass.TestBase;
 import com.appium.Utilities.TestUtility;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
-public class ViewsPage extends TestBase
+public class ViewsPage 
 {
 	@AndroidFindBy(xpath = "//android.widget.TextView[@text = 'Views']")
 	public WebElement viewsButton;
