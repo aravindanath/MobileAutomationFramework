@@ -26,6 +26,7 @@ public class TestUtility extends TestBase
 	public static TouchAction touchAction;
 	public static LongPressOptions longPressOptions;
 	
+	public final static int Implicit_Wait = 15;
 	public final static int timeOut = 30;
 	public final static String additionOfTwoNumbers = "10";
 	public final static String multiplicationOfTwoNumbers = "40";
@@ -67,8 +68,8 @@ public class TestUtility extends TestBase
 		}
 	}
 	
-	//Function to Verify, Element is Present Or No.
-	public static Boolean isElementPresent(WebElement element) throws InterruptedException 
+	//Function to Verify, Element is Displayed Or No.
+	public static boolean isElementDisplayed(WebElement element)
 	{
 		try 
 		{
@@ -80,7 +81,7 @@ public class TestUtility extends TestBase
 		{
 			excetion.printStackTrace();
 		}
-		return null;
+		return false;
     }
 	
 	//Function to Wait for an Element to be Visible for Specific Time.
@@ -139,8 +140,8 @@ public class TestUtility extends TestBase
 		}
     }
     
-    //Function to Close Android Keyboard.
-    public static void closeKeyboard() 
+    //Function to Hide Android Keyboard.
+    public static void hideKeyboard() 
     {
         ((AppiumDriver) driver).hideKeyboard();
     }

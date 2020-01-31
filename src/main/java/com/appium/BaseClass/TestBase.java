@@ -10,6 +10,9 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
+
+import com.appium.Utilities.TestUtility;
+
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 
@@ -50,7 +53,7 @@ public class TestBase
 		
 		url = new URL("http://127.0.0.1:4723/wd/hub");
 		driver = new AndroidDriver<WebElement>(url, capabilities);
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(TestUtility.Implicit_Wait, TimeUnit.SECONDS);
 		
 		return driver;
 	}

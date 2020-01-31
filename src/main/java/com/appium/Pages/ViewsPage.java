@@ -74,7 +74,7 @@ public class ViewsPage
 	
 	public void sampleMenuPresent() throws InterruptedException
 	{
-		TestUtility.isElementPresent(sampleMenuTitle);
+		TestUtility.isElementDisplayed(sampleMenuTitle);
 	}
 	
 	public void tapOnExpandableList()
